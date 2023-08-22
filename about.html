@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="ass.css" type="text/css"/>
+    <title>ABOUT | My Site</title>
+</head>
+<body style="position: relative;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-radius: 3px;">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler"
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#navbarNav" 
+             aria-controls="navbarNav" 
+             aria-expanded="false" 
+             aria-label="Toggle navigation" 
+             style="margin-right: 0.25em;">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto nb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"><span class="sr-only"><b>About</b></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+   
+    <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">About Us</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Our Story</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Our Approach</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Why Choose Us</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-5">Our Team</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-6">Our Promise</a>
+      </div>
+<div class="container">
+  
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="color:white">
+        <h4 id="list-item-1">About Us</h4>
+        <p>Welcome to [Company Name], your partner in digital transformation and success. With a passion for innovation and a commitment to excellence, we are a dedicated team of professionals who thrive on crafting exceptional solutions for your unique needs.</p>
+        <h4 id="list-item-2">Our story</h4>
+        <p> Founded in [Year], [Company Name] emerged with a vision to redefine how businesses connect with their audiences in the digital age. Our journey began with a small group of experts who shared a common goal: to empower businesses to thrive in the online landscape. Over the years, our dedication to this mission has driven us to evolve and adapt to the ever-changing digital landscape.</p>
+        <h4 id="list-item-3">Our Approach</h4>
+        <p>At [Company Name], we believe that every business has a unique story to tell and challenges to overcome. Our approach revolves around understanding your distinct goals and crafting tailored solutions that align with your vision. We blend creativity, technology, and strategic thinking to deliver results that truly matter.</p>
+        <h4 id="list-item-4">Why Choose Us</h4>
+        <p><ul>
+            <li><strong>Expertise:</strong> Our team comprises skilled professionals with a proven track record in [Industry/Services]. We bring a wealth of experience to the table, ensuring you're in capable hands.</li>
+             
+            <li><strong>Innovation:</strong> We thrive on innovation. By staying at the forefront of technological advancements, we create solutions that are not only current but also future-ready.</li>
+             
+            <li><strong>Client-Centric:</strong> Your success is our success. We value open communication, collaboration, and building lasting relationships with our clients.</li>
+             
+            <li><strong>Tailored Solutions:</strong> We understand that one size doesn't fit all. Our solutions are meticulously crafted to address your specific challenges and opportunities.</li>
+             
+            <li><strong>Results-Driven:</strong> We're not just about delivering projects; we're about achieving outcomes. Our focus is on measurable results that contribute to your growth.</li>
+          </ul>
+        </p>
+        <h4 id="list-item-5">Our Team</h4>
+        <p>Meet the brains behind [Company Name]. Our diverse team consists of passionate individuals, each bringing a unique perspective to the table. We're united by our dedication to creativity, innovation, and achieving excellence for our clients.</p>
+        <h4 id="list-item-6">Our Promise</h4>
+        <p>When you choose [Company Name], you're choosing a partner committed to your success. We're with you every step of the way, from ideation to execution and beyond. Our goal is to help you navigate the digital landscape with confidence, making your mark and achieving your business objectives.</p>
+      </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    let scrollSpy = new bootstrap.ScrollSpy(document.body, { target: '#navbar-example' });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="ass.css" type="text/css"/>
+    <title>Services | MY SITE</title>
+</head>
+<body>
+<header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-radius: 3px;">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation" 
+                style="margin-right: 0.25em;">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto nb-2 mb-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html"><span class="sr-only"><b>Services</b></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+</header>
+<div class="container">
+    <h1 style="color: white;">Our Services</h1>
+     <div class="row"> <!-- Row 1  -->
+    <div class="col">
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="IMAGES/WEBSITE-SOL.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Websites</h5>
+                <p class="card-text" style="font-size:small;">"Crafting tailored online identities. We specialize in crafting bespoke websites that mirror your vision. Elevate your digital presence with our expert design and personalized solutions."</p>
+                <a href="#" class="btn btn-primary">Email us</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="IMAGES/app-img.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Software Application</h5>
+                <p class="card-text" style="font-size:small;">"Building tailored mobile applications to match unique business needs, utilizing advanced coding and technologies for optimal functionality and user satisfaction."<p>
+                <a href="#" class="btn btn-primary">Email us</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="IMAGES/e-commerce-solutions-service.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">E-commerce Solutions</h5>
+                <p class="card-text" style="font-size:small;" >"Comprehensive online store setups, integrating secure payment gateways and intuitive navigation, to drive sales and provide a streamlined shopping experience."<p>
+                <a href="#" class="btn btn-primary">Email us</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="IMAGES/seo-sol.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Search Engine Optimization(SEO)</h5>
+                <p class="card-text"  style="font-size:small;">"Enhancing website visibility through strategic optimization, boosting organic traffic and search engine rankings to amplify online reach."</p>
+                <a href="#" class="btn btn-primary">Email us</a>
+            </div>
+        </div>
+    </div>
+</div> <!-- Row 1  end  -->
+<div class="row"><!-- Row 2 start  -->
+    <div class="col">
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="IMAGES/Beige Purple Isometric Web Security Service Poster.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Website Security Services</h5>
+                <p class="card-text" style="font-size:small;">Ensure your website's protection against cyber threats with robust security measures, safeguarding data and user privacy.</p>
+                <a href="#" class="btn btn-primary">Email us</a>
+            </div>
+        </div>
+    </div>
+</div><!-- Row 2 end  -->
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script>
+    // Add event listeners to email links
+    let links = document.querySelectorAll(".btn-primary");
+    links.forEach(function(link) {
+        link.addEventListener("click", function() {
+            let mailtoLink = "mailto:example@gmail.com?subject=Interested%20in%20your%20services";
+            window.location.href = mailtoLink;
+        });
+    });
+</script>
+
+</body>
+</html>
+
+   

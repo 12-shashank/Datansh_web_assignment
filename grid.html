@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid with Pagination</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid with Pagination</h1>
+    <div id="pagination"></div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody id="gridData">
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+
+
+    
+    <script>
+        const gridDataElement = document.getElementById('gridData');
+        const paginationElement = document.getElementById('pagination');
+
+        const apiUrl = 'https://reqres.in/api/users?page=1&per_page=5';
+
+        function fetchGridData(page) {
+            fetch(`${apiUrl}&page=${page}`)
+                .then(response => response.json())
+                .then(data => {
+                    gridDataElement.innerHTML = '';
+                    data.data.forEach(user => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${user.id}</td>
+                            <td>${user.email}</td>
+                            <td>${user.first_name}</td>
+                            <td>${user.last_name}</td>
+                        `;
+                        gridDataElement.appendChild(row);
+                    });
+
+                    // Create pagination links
+                    paginationElement.innerHTML = '';
+                    for (let i = 1; i <= data.total_pages; i++) {
+                        const link = document.createElement('a');
+                        link.href = '#';
+                        link.textContent = i;
+                        link.onclick = () => fetchGridData(i);
+                        paginationElement.appendChild(link);
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Initial fetch on page load
+        fetchGridData(1);
+    </script>
+</body>
+</html>
